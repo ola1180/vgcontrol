@@ -1,0 +1,95 @@
+.contact {
+  padding-top: 100px;
+  margin-left: 400px;
+}
+
+.contact-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 30% 30%;
+  gap: 5%;
+  margin-top: 40px;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  align-items: center;
+  border-left: 3px solid var(--color-primary);
+  padding: 0px 0 1px 10px;
+  justify-content: center;
+  margin-bottom: 5px;
+  letter-spacing: 2.4px;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15 rem;
+}
+
+.contact-option {
+  background: var(--color-primary-variant);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  /* transition: var(--transition); */
+  color: azure;
+  display: grid;
+  place-items: center;
+}
+
+.contact-option:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.contact-optio-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.1rem;
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  resize: none;
+  color: white;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+.contact-map img {
+  width: 500px;
+}
+
+.contact-with-us {
+  display: grid;
+  place-items: center;
+}
+
+.contact-adress-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  margin-top: 50px;
+  padding-bottom: 200px;
+}

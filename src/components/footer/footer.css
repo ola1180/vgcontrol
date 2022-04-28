@@ -1,0 +1,5 @@
+.footer-container {
+  height: 200px;
+  background-color: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur;
+}

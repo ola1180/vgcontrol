@@ -1,0 +1,28 @@
+.services-container {
+  margin: 1rem;
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-text {
+  margin: 0.5rem;
+  min-width: 160px;
+}
+
+.right-text h2 {
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.right-text h3 {
+  font-size: 0.8rem;
+  font-weight: 200;
+}

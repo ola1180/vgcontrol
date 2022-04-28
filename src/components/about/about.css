@@ -1,0 +1,26 @@
+.aboutvg-container {
+  margin-left: 200px;
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.aboutvg h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  align-items: center;
+  border-left: 3px solid var(--color-primary);
+  padding: 0px 0 1px 10px;
+  justify-content: center;
+  margin-bottom: 5px;
+  letter-spacing: 2.4px;
+}
+
+.aboutvg h2 {
+  font-size: 1rem;
+  font-weight: 200;
+  padding-top: 10px;
+  letter-spacing: 0.1rem;
+}

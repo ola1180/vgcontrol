@@ -1,0 +1,86 @@
+.header-container {
+  display: flex;
+  border: 1px solid red;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  margin: 0 6rem 6rem 6rem;
+}
+
+video {
+  width: 650px;
+  border: 2px solid white;
+  display: block;
+  margin-right: 10rem;
+}
+
+.banner-text {
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  text-align: center;
+}
+
+.banner-text h2 {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 3.5px;
+  letter-spacing: 1rem;
+}
+
+.banner-text h2 span {
+  color: white;
+}
+
+.left-header-container {
+  height: auto;
+  vertical-align: middle;
+}
+
+.right-header-container {
+  margin-right: 5rem;
+  /* border: 2px solid white; */
+  display: grid;
+  place-items: center;
+}
+
+.right-header-container h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  align-items: center;
+  border-left: 3px solid var(--color-primary);
+  padding: 1px 0 1px 15px;
+  justify-content: center;
+  margin-bottom: 5px;
+  letter-spacing: 2.4px;
+  /* border: 2px solid white; */
+}
+
+.right-header-container h3 {
+  font-size: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  /* border: 2px solid white; */
+  padding: 20px 0 20px 0;
+}
+
+.arrow-up-icon {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+button {
+  background: var(--color-primary-variant);
+  font-size: 0.7rem;
+  font-weight: 100;
+  padding: 1.5rem;
+  border-radius: 0.1rem;
+  color: white;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
