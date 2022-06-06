@@ -1,0 +1,89 @@
+.faq-wrapper {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    width: 900px;
+}
+
+.item {
+    background: var(--color-secondary);
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+
+}
+
+.content.show {
+    height: auto;
+    max-height: 9999px;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.title span {
+    padding: 0 30px;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.robotics-container h2 p {
+    margin-bottom: 0
+}
+
+.robotics-container h2 p+p {
+    text-indent: 2.8em;
+    margin-top: 0
+}
+
+.robotics-container h2 {
+    margin-bottom: 0;
+}
+
+.robotics-container h3 {
+    border-top: 1px solid lightslategray;
+    padding-top: 5px;
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .accordion {
+        width: 300px;
+    }
+
+    .item {
+        padding-left: 20px;
+    }
+
+    .title span {
+        padding: 0 20px;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    
+    .robotics-container h2 {
+        margin-left: 20px;
+    }
+
+    .robotics-container h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}

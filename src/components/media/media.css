@@ -1,0 +1,42 @@
+.media-container{
+    padding-top:120px;
+}
+
+.media__btn  {
+    letter-spacing: 2px;
+    color: var(--color-headings);
+    transition: var(--transition);
+    padding: 40px 60px 0 60px;
+  }
+
+.media__btn:hover  {
+    transform: scale(1.1);
+}
+
+.media-container h2 p {
+    margin-bottom: 0
+  }
+  
+.media-container h2 p + p {
+    text-indent: 2.6em;
+    margin-top: 0
+  }
+
+
+  @media screen and (max-width: 450px) {
+    .media__btn  {
+      color: var(--color-headings);
+      transition: var(--transition);
+      padding: 0 20px 20px 20px;
+      letter-spacing: 1px;
+  }
+
+  .media-container{
+    padding-top:50px;
+}
+
+.media__btn:hover  {
+  transform: scale(1.05);
+}
+  
+  }

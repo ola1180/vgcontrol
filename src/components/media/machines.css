@@ -1,0 +1,46 @@
+.machines-container {
+    padding: 40px 0;
+}
+
+.machines-container img {
+    width: 650px;
+}
+
+.machine-list li {
+    margin-left: 20px;
+    padding: 3px;
+}
+
+.list-point {
+    color: var(--color-secondary);
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 330px) {
+    .machines-container img {
+        width: 280px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .machines-container img {
+        width: 350px;
+        padding-top: 20px;
+    }
+
+    .machine-list li {
+        font-size: 1.2rem;
+    }
+
+    .machines-container {
+        font-size: 1.2rem;
+    }
+
+    .machines-container {
+        padding: 0;
+    }
+    
+}

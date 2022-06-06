@@ -3,38 +3,39 @@ import './contact.css'
 import { AiOutlineMail } from 'react-icons/ai'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { ImMobile } from 'react-icons/im'
-import MAP from '../../assets/map.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact() {
     return (
-        <div id='contact' className='contact'>
-            <div className='contact-container'>
-                <div className='contac-with-us'>
-                    <h1>Skontaktuj się z nami</h1>
-                </div>
+        <section id='contact' className='container' data-aos='slide-right'>
+            <header>
+                <h2><p className='first-paragraph'>Skontaktuj</p> <p>się z nami</p></h2>
+            </header>
+            <div className='contact-container grid grid--1x2'>
                 <div className='contact-options'>
                     <article className='contact-option'>
                         <a href='mailto:g.ulanowski@vgcontrol.pl' target='_blank'>
                             <AiOutlineMail className='contact-option-icon' />
                             <h4>Email</h4>
-                            <h5>g.ulanowski@vgcontrol.pl</h5>
-                            <h5>Wyślij wiadomość</h5>
+                            <p>g.ulanowski@vgcontrol.pl</p>
+                            <p>Wyślij wiadomość</p>
                         </a>
                     </article>
                     <article className='contact-option'>
                         <a href='https://api.whatsapp.com/send?phone+48509896280' target='_blank' >
                             <AiOutlineWhatsApp className='contact-option-icon' />
                             <h4>WhatsApp</h4>
-                            <h5>+48 509 896 280</h5>
-                            <h5>Wyślij wiadomość</h5>
+                            <p>+48 509 896 280</p>
+                            <p>Wyślij wiadomość</p>
                         </a>
                     </article>
                     <article className='contact-option'>
-                        <a href='https://api.whatsapp.com/send?phone+48509896280' target='_blank' >
+                        <a href='tel:+48 509 896 28' target='_blank' >
                             <ImMobile className='contact-option-icon' />
                             <h4>Telefon</h4>
-                            <h5>+48 509 896 280</h5>
-                            <h5>Zadzwoń</h5>
+                            <p>+48 509 896 280</p>
+                            <p>Zadzwoń</p>
                         </a>
                     </article>
                 </div>
@@ -43,20 +44,10 @@ function Contact() {
                     <input type='email' name='email' placeholder='Email' required />
                     <input type='mobile' name='mobile' placeholder='Telefon' required />
                     <textarea name='wiadomość' rows='9' placeholder='Wiadomość' required></textarea>
-                    <button type='submit' className='btn'>Wyślij wiadomość</button>
+                    <button type='submit' className=' btn btn--primary'>Wyślij wiadomość</button>
                 </form>
             </div>
-            <div className='contact-adress-container'>
-                <div className='adress'>
-                    <h2>VG CONTROL</h2>
-                    <h3>ul. Myśliwska 98/25 <br />
-                        80-283, Gdańsk <br />
-                        NIP : 8471598082 <br />
-                        REGON: 389905509</h3>
-                </div>
-                <div className='contact-map'><img src={MAP} alt="" /></div>
-            </div>
-        </div>
+        </section>
     )
 }
 

@@ -1,95 +1,100 @@
-.contact {
-  padding-top: 100px;
-  margin-left: 400px;
+#contact {
+  padding-top: 120px;
 }
 
-.contact-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 20% 30% 30%;
-  gap: 5%;
-  margin-top: 40px;
+#contact h2 p {
+  margin-bottom: 0
 }
 
-.contact h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  align-items: center;
-  border-left: 3px solid var(--color-primary);
-  padding: 0px 0 1px 10px;
-  justify-content: center;
-  margin-bottom: 5px;
-  letter-spacing: 2.4px;
+#contact h2 p+p {
+  text-indent: 5.07em;
+  margin-top: 0
 }
+
+
 
 .contact-options {
   display: flex;
   flex-direction: column;
-  gap: 15 rem;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+
 }
 
 .contact-option {
-  background: var(--color-primary-variant);
-  padding: 1rem;
-  border-radius: 0.2rem;
+  border-radius: .5rem;
   text-align: center;
-  border: 1px solid transparent;
-  /* transition: var(--transition); */
-  color: azure;
+  border: 1px solid var(--color-secondary);
   display: grid;
   place-items: center;
+  width: 300px;
+  transition: var(--transition);
+
 }
+
 
 .contact-option:hover {
-  background: transparent;
-  border-color: var(--color-primary);
+  transform: scale(1.1);
+  filter: brightness(2);
 }
 
-.contact-optio-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.contact-option-icon {
+  font-size: 2rem;
+  margin-top: .5rem;
 }
 
 .contact-option a {
-  margin-top: 0.7rem;
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1.4rem;
+  color: lightgray;
+  letter-spacing: 1.8px;
+  margin-top: 1rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.1rem;
-  background: transparent;
-  border: 1px solid var(--color-primary);
-  resize: none;
-  color: white;
+.contact-option h4 {
+  margin: 0 0 1.5rem 0;
 }
 
-article {
-  margin-bottom: 1.5rem;
+.contact-option p {
+  margin-bottom: 1rem;
 }
 
-.contact-map img {
-  width: 500px;
+
+@media (max-width: 1024px) {
+
+  .contact-option {
+    transition: var(--transition);
+    margin-bottom: 30px;
+  }
+
+
+  form {
+    margin: 100px 100px 0 100px;
+  }
+
 }
 
-.contact-with-us {
-  display: grid;
-  place-items: center;
-}
+@media screen and (max-width: 450px) {
 
-.contact-adress-container {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 50% 50%;
-  margin-top: 50px;
-  padding-bottom: 200px;
+  form {
+    margin: 0;
+  }
+
+  #contact {
+    padding-top: 30px;
+    font-size: 1.2rem;
+  }
+
+  .contact-option {
+    width: 280px;
+
+
+  }
 }

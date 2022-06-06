@@ -1,29 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './nav.css'
 import LOGO from '../../assets/logo.png'
+import { Link } from "react-router-dom"
+
 
 function Nav() {
+    
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => setClick(!click)
+    const closeMobileMenu = () => setClick(false)
+
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 70) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+
+    window.addEventListener('scroll', changeColor)
+
     return (
-        <nav className='navbar-container'>
-            <a href='#home' className='logo'><img src={LOGO} alt="" /></a>
-            <a href='#' class="toggle-button">
-                <span className='bar'></span>
-                <span className='bar'></span>
-                <span className='bar'></span>
-            </a>
-            <div className='navbar-links'>
-                <ul>
-                    <li><a href='#home'>O NAS</a></li>
-                    <li><a href='#services'>OFERTA</a></li>
-                    <li><a href='#services'>ULGA NA ROBOTYZACJĘ</a></li>
-                    <li><a href='#contact'>KONTAKT</a></li>
-                </ul>
-                <div className='lang-menu'>
-                    <span className='pl'>PL</span>
-                    <div className='switcher'><input type="checkbox" className='check'></input></div>
-                    <span className='eng'>ENG</span>
-                </div>
-            </div>
+
+         <nav className={color ? 'nav--bg' : 'nav'}> 
+            <Link to='/' className='logo' onClick={closeMobileMenu}><img src={LOGO} alt="" /></Link>
+            <button class={click ? 'toggle-button--close' : 'toggle-button'} onClick={handleClick}>
+                <span className='bar--first'></span>
+                <span className='bar--second'></span>
+                <span className='bar--third'></span>
+            </button>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='list__item' onClick={closeMobileMenu}><a href='/#about'>O NAS</a></li>
+                <li className='list__item' onClick={closeMobileMenu}><a href='/#media'>OFERTA</a></li>
+                <li className='list__item' onClick={closeMobileMenu}><Link to='/robotics'>ULGA NA ROBOTYZACJĘ</Link></li>
+                <li className='list__item' onClick={closeMobileMenu}><a href='/#contact'>KONTAKT</a></li>
+            </ul>
         </nav>
     )
 }
