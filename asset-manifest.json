@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vgcontrol/static/css/main.53a0cf18.css",
+    "main.js": "/vgcontrol/static/js/main.00beddcf.js",
+    "static/media/mainvideo.webm": "/vgcontrol/static/media/mainvideo.cf052abc4dbd703baf9d.webm",
+    "static/media/assembly-robots_0.jpg": "/vgcontrol/static/media/assembly-robots_0.19d1b7f96eba4c1027f5.jpg",
+    "static/media/download.jpg": "/vgcontrol/static/media/download.778852b53e02574d8eab.jpg",
+    "static/media/robot-jobs-arm.jpg": "/vgcontrol/static/media/robot-jobs-arm.45964fde0261a22f4a51.jpg",
+    "static/media/Industrial_Robot_Companies_Yaskawa.jpg": "/vgcontrol/static/media/Industrial_Robot_Companies_Yaskawa.a8eb5f05c647890a1ec5.jpg",
+    "static/media/Motoman_GP8_0003.webp": "/vgcontrol/static/media/Motoman_GP8_0003.fbb2f272a3d0b84eb5d9.webp",
+    "static/media/large.jpg": "/vgcontrol/static/media/large.59aa87ec0d9477066b8a.jpg",
+    "static/media/service.png": "/vgcontrol/static/media/service.dc9cf557693db91ebb01.png",
+    "static/media/robotics.png": "/vgcontrol/static/media/robotics.924c7c9e5a697edf746e.png",
+    "static/media/logo.png": "/vgcontrol/static/media/logo.9668a026050c61f955a8.png",
+    "static/media/plc.png": "/vgcontrol/static/media/plc.0eeea6ad2501145ed974.png",
+    "index.html": "/vgcontrol/index.html",
+    "main.53a0cf18.css.map": "/vgcontrol/static/css/main.53a0cf18.css.map",
+    "main.00beddcf.js.map": "/vgcontrol/static/js/main.00beddcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53a0cf18.css",
+    "static/js/main.00beddcf.js"
+  ]
+}
